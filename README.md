@@ -42,7 +42,6 @@ The validation dataset consists of just 16 images (8 normal and 8 bacterial pneu
 
 The test dataset consists of 390 pneumonia images (242 bacterial & 148 viral) and 234 normal chest X-ray images.
 
-**Table 1.** Dataset details
 ![Dataset](https://github.com/Mukundaram/Mukund/blob/master/images/Dataset.PNG)
 
 *Note: The focus is on classifying viral pneumonia and bacterial pneumonia and so, the normal chest X-ray images are not used for modelling purposes.*
@@ -155,9 +154,11 @@ The last step is to classify the attained data and assign it to a specific. The 
 The Receiver Operator Characteristic (ROC) curve is an evaluation metric for binary classification problems. It is a probability curve that plots the True Positive Rate (TPR) against False Positive Rate (FPR) at various threshold values and essentially separates the ‘signal’ from the ‘noise’. The Area Under the Curve (AUC) is the measure of the ability of a classifier to distinguish between classes and is used as a summary of the ROC curve.
 
 **Figure 4.** Confusion Matrix
+
 ![Confusion Matrix](https://github.com/Mukundaram/Mukund/blob/master/images/Confusion_matrix.PNG)
 
 **Figure 5.** ROC Curve
+
 ![ROC Curve](https://github.com/Mukundaram/Mukund/blob/master/images/ROC.PNG)
 
 # **Model Interpretability using Grad-CAM**
