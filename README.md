@@ -8,7 +8,7 @@
 
 The original problem statement is to classify normal Chest X -rays and Pneumonia Chest X-rays. The pneumonia images contain both bacterial and viral pneumonia images.
 
-***To make the problem more challenging, the normal images were removed and the pnenumina images alone were used to build a binary classifier than can distinguish between Viral and Bacterial Pnenumonia.***
+***To make the problem more challenging, the normal images were removed and the pneumonia images alone were used to build a binary classifier than can distinguish between Viral and Bacterial Pnenumonia.***
 
 ## **Business Problem**
 
@@ -24,7 +24,9 @@ Detecting pneumonia in chest X-rays is a challenging task that relies on the ava
 
 Convolutional neural networks (CNNs) have shown great promise in image classification and therefore widely adopted by the research community. Deep Learning Machine learning techniques on chest X-Rays are getting popularity as they can be easily used with low-cost imaging techniques. 
 
-Transfer learning can be useful in those applications of CNN where the dataset is not large. The concept of transfer learning is shown in the figure 2, where the trained model from large dataset such as ImageNet can be used for application with comparatively smaller dataset.
+Transfer learning can be useful in those applications of CNN where the dataset is not large. The concept of transfer learning is shown in the figure below, where the trained model from large dataset such as ImageNet can be used for application with comparatively smaller dataset.
+
+![Transfer Learning](https://github.com/Mukundaram/Mukund/blob/master/images/Transfer_Learning.PNG)
 
 
 ## **Data Understanding**
