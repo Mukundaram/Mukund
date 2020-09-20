@@ -24,7 +24,9 @@ Detecting pneumonia in chest X-rays is a challenging task that relies on the ava
 
 Convolutional neural networks (CNNs) have shown great promise in image classification and therefore widely adopted by the research community. Deep Learning Machine learning techniques on chest X-Rays are getting popularity as they can be easily used with low-cost imaging techniques. 
 
-Transfer learning can be useful in those applications of CNN where the dataset is not large. The concept of transfer learning is shown in the figure 2, where the trained model from large dataset such as ImageNet can be used for application with comparatively smaller dataset.
+Transfer learning can be useful in those applications of CNN where the dataset is not large. The concept of transfer learning is shown in the figure below, where the trained model from large dataset such as ImageNet can be used for application with comparatively smaller dataset.
+
+![Transfer Learning](https://github.com/Mukundaram/Mukund/blob/master/images/Transfer_Learning.PNG)
 
 
 ## **Data Understanding**
