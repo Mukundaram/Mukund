@@ -179,9 +179,11 @@ This method is:
 For more information on how Grad-CAM works, refer to Selvaraju et al.’s paper - https://arxiv.org/abs/1610.02391 as well as this article by Divyanshu Mishra - https://towardsdatascience.com/demystifying-convolutional-neural-networks-using-gradcam-554a85dd4e48
 
 **Figure 6.** GradCAM visualization - (1) the original viral pneumonia image, (2) the heatmap, and (3) the heatmap transparently overlaid on the original image with the predicted class label
+
 ![GradCam Virus](https://github.com/Mukundaram/Mukund/blob/master/images/Gradcams.PNG)
 
 **Figure 7.** GradCAM visualization - (1) the original bacterial pneumonia image, (2) the heatmap, and (3) the heatmap transparently overlaid on the original image with the predicted class label
+
 ![GradCam Bacteria](https://github.com/Mukundaram/Mukund/blob/master/images/Gradcams2.PNG)
 
 ## **Model Deployment**
