@@ -4,6 +4,8 @@
 
 **Dataset:** Chest X-Ray Images (https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia)
 
+**Team Member(s)**: Mukund 
+
 The original problem statement is to classify normal Chest X -rays and Pneumonia Chest X-rays. The pneumonia images contain both bacterial and viral pneumonia images.
 
 ***To make the problem more challenging, the normal images were removed and the pnenumina images alone were used to build a binary classifier than can distinguish between Viral and Bacterial Pnenumonia.***
