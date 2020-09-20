@@ -177,7 +177,7 @@ For more information on how Grad-CAM works, refer to Selvaraju et al.’s paper 
 
 ![GradCam Bacteria](https://github.com/Mukundaram/Mukund/blob/master/images/Gradcams2.PNG)
 
-## **MODEL DEPLOYMENT**
+## **Model Deployment**
 The model weights have been saved in a hdf5 file. Hence, the model can be loaded any time and used to predict either on a single image or a batch of images.
 1. Create the same model architecture and instantiate the weights of the model from the saved file.
 2. Load the image and apply the data pre-processing steps.
