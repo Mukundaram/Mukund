@@ -36,9 +36,13 @@ Transfer learning can be useful in those applications of CNN where the dataset i
 The dataset from kaggle chest X-ray pneumonia database was used and consists of chest X-ray images with resolution varying from 400 pixels to 2000 pixels. Chest X-ray images were selected from retrospective cohorts of pediatric patients of one to five years old from Guangzhou Women and Children’s Medical Center, Guangzhou. All chest X-ray imaging was performed as part of patients’ routine clinical care. For the analysis of chest x-ray images, all chest radiographs were initially screened for quality control by removing all low quality or unreadable scans. The diagnoses for the images were then graded by two expert physicians before being cleared for training the AI system. In order to account for any grading errors, the evaluation set was also checked by a third expert.
 
 Out of 5216 training images, there are 3875 images from different subjects affected by pneumonia (2530 images for bacterial pneumonia and 1345 images for viral pneumonia) and 1341 images are from normal subjects. Mixed viral and bacterial infection occurs in some cases of pneumonia. However, the dataset provided does not include any case of viral and bacterial co-infection.
+
 The validation dataset consists of just 16 images (8 normal and 8 bacterial pneumonia images). Since this data was very small and does not contain instances of viral pneumonia, this was discarded and 10% of training data was used as validation dataset.
 
 The test dataset consists of 390 pneumonia images (242 bacterial & 148 viral) and 234 normal chest X-ray images.
+
+![Dataset](https://github.com/Mukundaram/Mukund/blob/master/images/Dataset.PNG)
+
 
 *Note: The focus is on classifying viral pneumonia and bacterial pneumonia and so, the normal chest X-ray images are not used for modelling purposes.*
 
