@@ -26,6 +26,7 @@ Convolutional neural networks (CNNs) have shown great promise in image classific
 
 Transfer learning can be useful in those applications of CNN where the dataset is not large. The concept of transfer learning is shown in the figure below, where the trained model from large dataset such as ImageNet can be used for application with comparatively smaller dataset.
 
+**Figure 1.** Transfer Learning for Medical Image Classification  
 ![Transfer Learning](https://github.com/Mukundaram/Mukund/blob/master/images/Transfer_Learning.PNG)
 
 
@@ -41,8 +42,8 @@ The validation dataset consists of just 16 images (8 normal and 8 bacterial pneu
 
 The test dataset consists of 390 pneumonia images (242 bacterial & 148 viral) and 234 normal chest X-ray images.
 
+**Table 1.** Dataset details
 ![Dataset](https://github.com/Mukundaram/Mukund/blob/master/images/Dataset.PNG)
-
 
 *Note: The focus is on classifying viral pneumonia and bacterial pneumonia and so, the normal chest X-ray images are not used for modelling purposes.*
 
@@ -86,10 +87,12 @@ The pre-trained model used for this problem is DenseNet which is widely used for
 
 Dense Convolutional Network (DenseNet), connects each layer to every other layer in a feed-forward fashion. Whereas traditional convolutional networks with L layers have L connections - one between each layer and its subsequent layer - our network has L(L+1)/2 direct connections. For each layer, the feature-maps of all preceding layers are used as inputs, and its own feature-maps are used as inputs into all subsequent layers. DenseNets have several compelling advantages: they alleviate the vanishing-gradient problem, strengthen feature propagation, encourage feature reuse, and substantially reduce the number of parameters. DenseNets obtain significant improvements over the state-of-the-art on most of them, whilst requiring less memory and computation to achieve high performance.
 
+**Figure 2.** DenseNet model - Different Architectures
 ![DenseNet121 Architecture](https://github.com/Mukundaram/Mukund/blob/master/images/DenseNet_Architecture.PNG)
 
 ## **Experimental setup**
 
+**Figure 3.** DenseNet121- Transfer Learning with Fine tuning
 ![Model Architecture](https://github.com/Mukundaram/Mukund/blob/master/images/Model_Architecture.PNG)
 
 The model used is a ***121-layer Dense Convolutional Network (DenseNet)*** trained on the ImageNet dataset. Use the pre-trained DenseNet121 model and add a ***Pooling layer, dropout layer*** and finally, a **dense layer with Sigmoid activation** for making the predictions.
@@ -151,9 +154,10 @@ The last step is to classify the attained data and assign it to a specific. The 
 
 The Receiver Operator Characteristic (ROC) curve is an evaluation metric for binary classification problems. It is a probability curve that plots the True Positive Rate (TPR) against False Positive Rate (FPR) at various threshold values and essentially separates the ‘signal’ from the ‘noise’. The Area Under the Curve (AUC) is the measure of the ability of a classifier to distinguish between classes and is used as a summary of the ROC curve.
 
-
+**Figure 4.** Confusion Matrix
 ![Confusion Matrix](https://github.com/Mukundaram/Mukund/blob/master/images/Confusion_matrix.PNG)
 
+**Figure 5.** ROC Curve
 ![ROC Curve](https://github.com/Mukundaram/Mukund/blob/master/images/ROC.PNG)
 
 # **Model Interpretability using Grad-CAM**
@@ -173,8 +177,10 @@ This method is:
 
 For more information on how Grad-CAM works, refer to Selvaraju et al.’s paper - https://arxiv.org/abs/1610.02391 as well as this article by Divyanshu Mishra - https://towardsdatascience.com/demystifying-convolutional-neural-networks-using-gradcam-554a85dd4e48
 
+**Figure 6.** GradCAM visualization - (1) the original viral pneumonia image, (2) the heatmap, and (3) the heatmap transparently overlaid on the original image with the predicted class label
 ![GradCam Virus](https://github.com/Mukundaram/Mukund/blob/master/images/Gradcams.PNG)
 
+**Figure 7.** GradCAM visualization - (1) the original bacterial pneumonia image, (2) the heatmap, and (3) the heatmap transparently overlaid on the original image with the predicted class label
 ![GradCam Bacteria](https://github.com/Mukundaram/Mukund/blob/master/images/Gradcams2.PNG)
 
 ## **Model Deployment**
